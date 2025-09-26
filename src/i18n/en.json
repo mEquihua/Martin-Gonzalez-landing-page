@@ -1,0 +1,17 @@
+{
+  "name": "Martin Gonzalez",
+  "role": "Software Engineer",
+  "tagline": "Turning ideas into software...",
+  "seo": {
+    "title": "Martin Gonzalez – Software Engineer",
+    "description": "Personal portfolio of Martin Gonzalez, a software engineer specialized in web, mobile, and scalable solutions."
+  },
+  "sections": {
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "cta": {
+    "projects": "#projects",
+    "contact": "#contact"
+  }
+}

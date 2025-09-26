@@ -1,0 +1,34 @@
+---
+const { seo, locale } = Astro.props;
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content="/images/og-cover.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class="bg-bg text-text font-body antialiased">
+    <header class="absolute top-0 right-0 p-4">
+      <a
+        href={locale === "es" ? "/en" : "/es"}
+        class="px-3 py-1 rounded-md border border-accent text-accent font-medium hover:bg-bg-alt transition"
+      >
+        {locale === "es" ? "English" : "Español"}
+      </a>
+    </header>
+
+    <main class="h-screen flex flex-col">
+      <slot />
+    </main>
+  </body>
+</html>

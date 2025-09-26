@@ -68,11 +68,11 @@
 /* Tailwind v4 tokens: this is what creates bg-bg, text-text, font-heading, etc. */
 @theme {
   /* Colors */
-  --color-bg: #0f172a;
-  --color-bg-alt: #1f2937;
-  --color-text: #f9fafb;
+  --color-bg: #262626;
+  --color-bg-alt: #262626;
+  --color-text: #ffffff;
   --color-text-muted: #9ca3af;
-  --color-accent: #2563eb;
+  --color-accent: #707070;
 
   /* Fonts */
   --font-heading: 'Exo 2', sans-serif;

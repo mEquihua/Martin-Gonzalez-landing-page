@@ -1,18 +1,9 @@
 ---
-import "../styles/global.css";
+import Base from "../layouts/base.astro";
+import Hero from "../components/hero.astro";
+import en from "../i18n/en.json";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Martín González</title>
-  </head>
-  <body class="bg-bg text-text font-body">
-    <h1 class="font-heading text-4xl">Martín González</h1>
-    <p class="text-text-muted mt-2">Ingeniero en Software</p>
-
-    <code class="font-mono bg-bg-alt text-accent px-2 py-1 rounded">
-      console.log("Hola mundo");
-    </code>
-  </body>
-</html>
+<Base seo={en.seo} locale="en">
+  <Hero t={en} />
+</Base>

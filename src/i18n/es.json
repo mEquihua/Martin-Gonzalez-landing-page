@@ -1,0 +1,17 @@
+{
+  "name": "Martín González",
+  "role": "Ingeniero en Software",
+  "tagline": "Transformando ideas en software...",
+  "seo": {
+    "title": "Martín González – Ingeniero en Software",
+    "description": "Portafolio personal de Martín González, ingeniero en software especializado en aplicaciones web, móviles y soluciones escalables."
+  },
+  "sections": {
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "projects": "#projects",
+    "contact": "#contact"
+  }
+}

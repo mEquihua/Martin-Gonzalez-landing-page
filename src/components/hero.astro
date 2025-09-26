@@ -1,0 +1,31 @@
+---
+import { siteConfig } from "../data/site";
+const { t } = Astro.props;
+---
+
+<section class="h-screen flex flex-col items-center justify-center text-center px-4">
+  <img
+    src={siteConfig.avatar}
+    alt={t.name}
+    class="w-32 h-32 rounded-full mb-6"
+    loading="eager"
+  />
+  <h1 class="font-heading text-4xl md:text-5xl mb-2">{t.name}</h1>
+  <h2 class="text-xl md:text-2xl text-accent mb-4">{t.role}</h2>
+  <p class="text-base md:text-lg text-text-muted mb-8">{t.tagline}</p>
+
+  <div class="flex gap-4">
+    <a
+      href={t.cta.projects}
+      class="px-6 py-3 rounded-xl bg-accent text-white font-medium shadow hover:opacity-90"
+    >
+      {t.sections.projects}
+    </a>
+    <a
+      href={t.cta.contact}
+      class="px-6 py-3 rounded-xl border border-accent text-accent font-medium hover:bg-bg-alt"
+    >
+      {t.sections.contact}
+    </a>
+  </div>
+</section>
